@@ -1,0 +1,132 @@
+body {
+	background-image: url("background.jpg");
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+	font-family: Calibri;
+	background-attachment: fixed;
+}
+h1, p {
+	margin: 0px auto;
+}
+a {
+	border: 0 none;
+	font: inherit;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.content {
+	width: 1020px;
+	margin: 0px auto;
+	height: auto;
+	position: relative;
+}
+
+/*augšējā navigācija*/
+
+#header {
+	height: 60px;
+	background-color: #f9f9f9;
+	border: 1px solid #ececec;
+	position: fixed;
+	margin-left: -1px;
+	z-index: 1;
+}
+
+.nav {
+	float: left;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 892px;
+}
+.clear {
+	clear: both;
+}
+.nav li {
+	display: inline-block;
+	margin-right: 50px;
+}
+.nav li:last-child {
+	margin-right: 0px;
+}
+.nav li a {
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 60px;
+	font-size: 20px;
+	color: #0059b3;
+	font-weight: bold;
+	transition: all 0.2s linear 0s;
+}
+.nav li a:hover {
+	color: #cce6ff;
+}
+.ico {
+	height: 27px;
+	width: 30px;
+	margin:17px;
+	vertical-align: baseline;
+	float:left;
+	background-image: url('ico.png');
+}
+
+#ico-right {
+	float: right;
+}
+.ico:hover {
+	background-image: url('ico-hover.png');
+}
+
+/*vidus*/
+
+.nav1 {
+	width: 150px;
+	height: auto;
+	min-height: 450px;
+	background-color: #f9f9f9;
+	float: left;
+	margin: 10px;
+}
+.text {
+	width: 830px;
+	height: auto;
+	min-height: 450px;
+	float: right;
+	margin: 10px;
+	background-color: #f9f9f9;
+
+}
+#input {
+	position: absolute;
+	margin-top: 70px;
+	margin: 70px;
+	padding: 0px;
+	width: 880px;
+
+}
+h1 {
+	text-transform: uppercase;
+	color: #0059b3;
+}
+textarea {
+	resize: none;
+}
+.img {
+	margin-left: 21px;
+	margin-top: 50px;
+	border: 5px solid #f9f9f9;
+}
+
+#bildes {
+	margin-top: 60px;
+	position: absolute;
+}
+input {
+	display: block;
+	margin-bottom: 20px;
+}

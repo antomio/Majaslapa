@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+
+
+	<meta charset="UTF-8" />
+	<title>Lapa</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+	<div class="content">
+
+		<div id="header" class="content">
+				<a class="ico" href="index.html"></a>
+			<ul class="nav">
+				<li>
+					<a href="index.html">Sākums</a>
+				</li>
+				<li>
+					<a href="raksti.html">Raksti</a>
+				</li>
+				<li>
+					<a href="bildes.html">Bildes</a>
+				</li>
+			</ul>
+				<a class="ico" id="ico-right"  href="index.html"></a>
+			<div class="clear"></div>
+		</div>
+
+		<div id="input">
+
+			<h1>Reģistrējies</h1>	
+
+			<form id="forma" action="" method="">
+
+				<input name="name" type="text" size="65" placeholder="Vārds">
+				<input name="surname" type="text" size="65" placeholder="Uzvārds">
+				<input name="tel" type="text" size="65" placeholder="Telefons">
+				<input name="mail" type="text" size="65" placeholder="E-pasts">
+				<textarea name="comment" rows="15" cols="50" placeholder="Komentāri"></textarea>
+				<input id="target" type="submit" value="Sūtīt">
+
+			</form>
+		</div>
+
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js">
+	</script>
+
+	<script>
+		
+// formas errors sarkans background
+
+		$( document ).ready(function() {
+  			$( "#target" ).click(function(e) {
+  				e.preventDefault();
+  				validation('name');
+  				validation('surname');
+  				validation('tel');
+  				validation('mail');
+  				validation('comment');
+			});
+		});
+
+		function validation(field){
+			if( $( "[name='" + field + "']" ).val() == "" ) {
+				$( "[name='" + field + "']" ).css("background-color", "red");
+			} 
+			else{
+				$( "[name='" + field + "']" ).css("background-color", "white");
+			}
+		}
+
+// formas errors sarkans background
+
+// console log variables
+
+		var time = "2016-01-01 23:23:23";
+		var message = "error message";
+		var type = "warn";
+
+			console.log("This is" + " " + message + " at " + time);
+
+		function myFunction(x, y) {
+			return x + y;
+		}
+
+			console.log(myFunction(5*(6/3),5));
+
+// console log variables
+
+// temperature variables
+
+		function toCelsius(fahrenheit) {
+    	return (18/9) * (fahrenheit-32);
+		}
+
+		var text = "The temperature is " + toCelsius(12) + " Celsius";
+
+		// var x = toCelsius(32);
+		// var text = "The temperature is "+ x +"  Celsius";
+
+			console.log(text)
+
+// temperature variables
+
+// text replacer
+
+		var txt = "string";
+		var x = txt.length;
+
+		str = "Please visit Microsoft!";
+		var n = str.replace("Microsoft","W3Schools");
+
+		var text1 = "Hello World!";       // String
+		var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+
+			console.log(n)
+			console.log(text2)
+			console.log(x)
+
+// text replacer
+
+	</script>
+
+	<!-- // <script src="mine.js"></script> -->
+
+</body>
+</html>
