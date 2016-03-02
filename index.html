@@ -63,46 +63,47 @@
 		$( document ).ready(function() {
   			$( "#target" ).click(function(e) {
   				e.preventDefault();
-  				validation('name');
-  				validation('surname');
-  				validation('tel');
-  				validation('mail');
-  				validation('comment');
-			});
+
+
+  				validation('name', color)
+
+
+  				validation('name', $( "input[name='name']" ).val());
+  			});
 		});
 
-		function validation(field){
-			if( $( "[name='" + field + "']" ).val() == "red" ) {
-				$( "[name='" + field + "']" ).css("background-color", "red");
-			} 
-			else if( $( "[name='" + field + "']" ).val() == "blue" ) {
-				$( "[name='" + field + "']" ).css("background-color", "blue");
-			} 
-			else if( $( "[name='" + field + "']" ).val() == "green" ) {
-				$( "[name='" + field + "']" ).css("background-color", "green");
-			} 
-			else if( $( "[name='" + field + "']" ).val() == "black" ) {
-				$( "[name='" + field + "']" ).css("background-color", "black");
-			} 
-			else if( $( "[name='" + field + "']" ).val() == "yellow" ) {
-				$( "[name='" + field + "']" ).css("background-color", "yellow");
-			} 
-			else if( $( "[name='" + field + "']" ).val() == "purple" ) {
-				$( "[name='" + field + "']" ).css("background-color", "purple");
-			} 
-			else if( $( "[name='" + field + "']" ).val() == "orange" ) {
-				$( "[name='" + field + "']" ).css("background-color", "orange");
-			} 
-			else if( $( "[name='" + field + "']" ).val() == "gray" ) {
-				$( "[name='" + field + "']" ).css("background-color", "gray");
-			} 
-			else if( $( "[name='" + field + "']" ).val() == "brown" ) {
-				$( "[name='" + field + "']" ).css("background-color", "brown");
-			}
-			else{
-				$( "[name='" + field + "']" ).css("background-color", "white");
-			}
-		}
+		function validation(field, color){
+		$( "input[name='" + field + "']" ).css("background-color", color);
+
+		// 	} 
+		// 	else if( $( "[name='" + field + "']" ).val() == "blue" ) {
+		// 		$( "[name='" + field + "']" ).css("background-color", "blue");
+		// 	} 
+		// 	else if( $( "[name='" + field + "']" ).val() == "green" ) {
+		// 		$( "[name='" + field + "']" ).css("background-color", "green");
+		// 	} 
+		// 	else if( $( "[name='" + field + "']" ).val() == "black" ) {
+		// 		$( "[name='" + field + "']" ).css("background-color", "black");
+		// 	} 
+		// 	else if( $( "[name='" + field + "']" ).val() == "yellow" ) {
+		// 		$( "[name='" + field + "']" ).css("background-color", "yellow");
+		// 	} 
+		// 	else if( $( "[name='" + field + "']" ).val() == "purple" ) {
+		// 		$( "[name='" + field + "']" ).css("background-color", "purple");
+		// 	} 
+		// 	else if( $( "[name='" + field + "']" ).val() == "orange" ) {
+		// 		$( "[name='" + field + "']" ).css("background-color", "orange");
+		// 	} 
+		// 	else if( $( "[name='" + field + "']" ).val() == "gray" ) {
+		// 		$( "[name='" + field + "']" ).css("background-color", "gray");
+		// 	} 
+		// 	else if( $( "[name='" + field + "']" ).val() == "brown" ) {
+		// 		$( "[name='" + field + "']" ).css("background-color", "brown");
+		// 	}
+		// 	else{
+		// 		$( "[name='" + field + "']" ).css("background-color", "white");
+		// 	}
+		 }
 
 // formas errors sarkans background
 
