@@ -56,9 +56,9 @@
 		
 // formas errors sarkans background
 
-		var semitransparentBlue = new RGBColour(0, 0, 255, 0.5);
+		// var semitransparentBlue = new RGBColour(0, 0, 255, 0.5);
 
-		console.log(semitransparentBlue);
+		// console.log(semitransparentBlue);
 
 		$( document ).ready(function() {
   			$( "#target" ).click(function(e) {
@@ -93,6 +93,12 @@
 			else if( $( "[name='" + field + "']" ).val() == "orange" ) {
 				$( "[name='" + field + "']" ).css("background-color", "orange");
 			} 
+			else if( $( "[name='" + field + "']" ).val() == "gray" ) {
+				$( "[name='" + field + "']" ).css("background-color", "gray");
+			} 
+			else if( $( "[name='" + field + "']" ).val() == "brown" ) {
+				$( "[name='" + field + "']" ).css("background-color", "brown");
+			}
 			else{
 				$( "[name='" + field + "']" ).css("background-color", "white");
 			}
@@ -151,37 +157,34 @@
 
 // document greeting
 
-	var word = "Kā viens solis";
-	var word2 = " mēs kopā speram ";
-	var word3 = "vienos vārtos.";
-	var sentence = word + word2 + word3;
+	// var word = "Kā viens solis";
+	// var word2 = " mēs kopā speram ";
+	// var word3 = "vienos vārtos.";
+	// var sentence = word + word2 + word3;
 
-	function myFun(test) {
-		alert(test);
-	}
+	// function myFun(test) {
+	// 	alert(test);
+	// }
 
-	myFun(sentence);
+	// myFun(sentence);
 
 // document greeting
 
 // darbs
+
 	// var x = 5;
  //  		$( "#target" ).click(function(e) {
  //  			e.preventDefault();
  //  			alert("Skaitlis būs " + x);
 	// });
+
 // darbs
 
 // darbs2
 
-
  //  		$( "#target" ).click(function(e) {
  //  			e.preventDefault();
- //  			   	validation('name');
- //  				// validation('surname');
- //  				// validation('tel');
- //  				// validation('mail');
- //  				// validation('comment');
+ //  			   	validation('name');				
  // 		});
 
  // function validation(field){
@@ -189,7 +192,7 @@
 	// 	 		alert("Skaitlis mazāks/vienāds par 9!");
 	// 	 	} 
 	// 	 	else{
-	// 			alert("Skaitlis lielāks/vienāds par 9!");
+	// 			console.log("Skaitlis lielāks/vienāds par 9!");
 	// 	 	}
 	// 	 }
 
