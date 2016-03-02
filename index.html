@@ -6,6 +6,8 @@
 	<meta charset="UTF-8" />
 	<title>Lapa</title>
 	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="/js/Colour.src.js"></script>
+	<script src="/js/jscolor.js"></script>
 </head>
 <body>
 
@@ -34,6 +36,7 @@
 
 			<form id="forma" action="" method="">
 
+				<input class="jscolor" value"" size="65" placeholder="Krāsa">
 				<input name="name" type="text" size="65" placeholder="Vārds">
 				<input name="surname" type="text" size="65" placeholder="Uzvārds">
 				<input name="tel" type="text" size="65" placeholder="Telefons">
@@ -53,6 +56,10 @@
 		
 // formas errors sarkans background
 
+		var semitransparentBlue = new RGBColour(0, 0, 255, 0.5);
+
+		console.log(semitransparentBlue);
+
 		$( document ).ready(function() {
   			$( "#target" ).click(function(e) {
   				e.preventDefault();
@@ -65,8 +72,26 @@
 		});
 
 		function validation(field){
-			if( $( "[name='" + field + "']" ).val() == "" ) {
+			if( $( "[name='" + field + "']" ).val() == "red" ) {
 				$( "[name='" + field + "']" ).css("background-color", "red");
+			} 
+			else if( $( "[name='" + field + "']" ).val() == "blue" ) {
+				$( "[name='" + field + "']" ).css("background-color", "blue");
+			} 
+			else if( $( "[name='" + field + "']" ).val() == "green" ) {
+				$( "[name='" + field + "']" ).css("background-color", "green");
+			} 
+			else if( $( "[name='" + field + "']" ).val() == "black" ) {
+				$( "[name='" + field + "']" ).css("background-color", "black");
+			} 
+			else if( $( "[name='" + field + "']" ).val() == "yellow" ) {
+				$( "[name='" + field + "']" ).css("background-color", "yellow");
+			} 
+			else if( $( "[name='" + field + "']" ).val() == "purple" ) {
+				$( "[name='" + field + "']" ).css("background-color", "purple");
+			} 
+			else if( $( "[name='" + field + "']" ).val() == "orange" ) {
+				$( "[name='" + field + "']" ).css("background-color", "orange");
 			} 
 			else{
 				$( "[name='" + field + "']" ).css("background-color", "white");
@@ -123,18 +148,22 @@
 
 // text replacer
 
-<<<<<<< HEAD
+
 // document greeting
 
-	document.write("Čau Visiem!");
 	var word = "Kā viens solis";
 	var word2 = " mēs kopā speram ";
 	var word3 = "vienos vārtos.";
 	var sentence = word + word2 + word3;
-	document.write(sentence);
+
+	function myFun(test) {
+		alert(test);
+	}
+
+	myFun(sentence);
 
 // document greeting
-=======
+
 // darbs
 	// var x = 5;
  //  		$( "#target" ).click(function(e) {
@@ -145,7 +174,7 @@
 
 // darbs2
 
-	// var x = 5;
+
  //  		$( "#target" ).click(function(e) {
  //  			e.preventDefault();
  //  			   	validation('name');
@@ -153,7 +182,7 @@
  //  				// validation('tel');
  //  				// validation('mail');
  //  				// validation('comment');
-	// });
+ // 		});
 
  // function validation(field){
 	// 	 	if( $( "[name='" + field + "']" ).val() <= 9 ) {
@@ -164,7 +193,7 @@
 	// 	 	}
 	// 	 }
 
->>>>>>> origin/master
+// darbs2
 
 	</script>
 
