@@ -60,20 +60,33 @@
 
 		// console.log(semitransparentBlue);
 
+		// (function($) {
+
+		// 	var array = [];
+		// 	for(var i = 0; i < 100; i++) {
+		// 		array[array.length] = Math.floor((Math.random() * 100) + 1)	;
+		// 	}
+		// })(jQuery);	
+
 		$( document ).ready(function() {
   			$( "#target" ).click(function(e) {
   				e.preventDefault();
-
-
-  				validation('name', color)
-
-
-  				validation('name', $( "input[name='name']" ).val());
+  				validation($( "input[name='name']" ).val());
   			});
 		});
 
-		function validation(field, color){
-		$( "input[name='" + field + "']" ).css("background-color", color);
+		function validation(value){
+			var array = [];
+			for(var i = 0; i < value; i++){
+				array[array.length] = Math.floor((Math.random() * 100) + 1)	;
+			}
+			console.log(array);
+		};
+		
+
+		//console.log(array);
+
+
 
 		// 	} 
 		// 	else if( $( "[name='" + field + "']" ).val() == "blue" ) {
@@ -103,7 +116,7 @@
 		// 	else{
 		// 		$( "[name='" + field + "']" ).css("background-color", "white");
 		// 	}
-		 }
+		 
 
 // formas errors sarkans background
 
